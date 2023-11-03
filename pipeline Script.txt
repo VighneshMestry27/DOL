@@ -1,0 +1,74 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Plan phase') {
+            steps {
+                echo 'Hi. This is Vinay Gurav'
+            }
+        }
+
+        stage('Code phase') {
+            steps {
+                input('Do you want to continue?')
+            }
+        }
+
+        stage('Integrate phase') {
+            when {
+                not {
+                    branch 'master'
+                }
+            }
+            steps {
+                echo 'Integration test passed'
+                // You can add integration test commands or scripts here
+            }
+        }
+
+        stage('Testing phase') {
+            parallel {
+                stage('Unit test') {
+                    steps {
+                        echo 'Running unit test'
+                        // You can add unit testing commands or scripts here
+                    }
+                }
+
+                stage('Integration test') {
+                    steps {
+                        echo 'Running integration test'
+                        // Add integration test commands or scripts here
+                    }
+                }
+            }
+        }
+
+        stage('Deployment phase') {
+            when {
+                branch 'master'
+            }
+            steps {
+                echo 'Deploying to production'
+                // Add deployment steps or commands here
+            }
+        }
+
+        stage('Notify phase') {
+            steps {
+                echo 'Notifying stakeholders'
+                // Add notification or alerting steps here
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully'
+            // Add post-success actions or notifications here
+        }
+        failure {
+            echo 'Pipeline failed'
+            // Add post-failure actions or notifications here
+        }
+    }

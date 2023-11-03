@@ -1,0 +1,111 @@
+Initialize a Git Repository:
+Syntax: git init
+Example: git init
+
+Clone a Remote Repository:
+Syntax: git clone <repository URL>
+Example: git clone https://github.com/user/repo.git
+
+Stage Changes:
+Syntax: git add <file>
+Example: git add file.txt
+
+Commit Changes:
+Syntax: git commit -m "Your commit message"
+Example: git commit -m "Fix a bug"
+
+Check Repository Status:
+Syntax: git status
+Example: git status
+
+Pull from a Remote Repository:
+Syntax: git pull <remote> <branch>
+Example: git pull origin main
+
+Push to a Remote Repository:
+Syntax: git push <remote> <branch>
+Example: git push origin feature-branch
+
+List Branches:
+Syntax: git branch
+Example: git branch
+
+Create a New Branch:
+Syntax: git branch <new-branch>
+Example: git branch feature-branch
+
+Switch to a Branch:
+Syntax: git checkout <branch>
+Example: git checkout feature-branch
+
+Merge Branches:
+Syntax: git merge <branch>
+Example: git merge feature-branch
+
+View Commit History:
+Syntax: git log
+Example: git log
+
+Show Changes in a Commit:
+Syntax: git show <commit>
+Example: git show abc1234
+
+Discard Changes:
+Syntax: git checkout -- <file>
+Example: git checkout -- file.txt
+
+Create a New Tag:
+Syntax: git tag -a <tag-name> -m "Your tag message" <commit>
+Example: git tag -a v1.0 -m "Initial release" abc1234
+
+List Tags:
+Syntax: git tag
+Example: git tag
+
+Show Changes in a Specific Commit:
+Syntax: git diff <commit> <commit>
+Example: git diff abc1234 def5678
+
+Configure User Name:
+Syntax: git config --global user.name "Your Name"
+Example: git config --global user.name "John Doe"
+
+Configure User Email:
+Syntax: git config --global user.email "youremail@example.com"
+Example: git config --global user.email "john@example.com"
+
+View Help and Manual:
+Syntax: git --help or git <command> --help
+Example: git --help
+
+git diff:
+Syntax: git diff
+Example: git diff
+
+git log:
+Syntax: git log
+Example: git log
+
+
+git remote:
+Syntax: git remote
+Example: git remote -v
+
+
+git fetch:
+Syntax: git fetch <remote>
+Example: git fetch origin
+
+git reset:
+Syntax: git reset <commit>
+Example: git reset HEAD~1
+
+
+git tag:
+Syntax: git tag <tagname>
+Example: git tag v1.0
+
+
+git stash:
+Syntax: git stash
+Example: git stash save "Work in progress"

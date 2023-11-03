@@ -1,0 +1,60 @@
+ls (List files and directories):
+
+Example: ls /home/user/documents
+pwd (Print working directory):
+
+Example: pwd
+cd (Change directory):
+
+Example: cd /var/www/html
+mkdir (Make directory):
+
+Example: mkdir myfolder
+touch (Create an empty file):
+
+Example: touch myfile.txt
+rm (Remove files or directories):
+
+Example: rm myfile.txt
+cp (Copy files or directories):
+
+Example: cp file1.txt file2.txt
+mv (Move or rename files/directories):
+
+Example: mv oldfile.txt newfile.txt
+cat (Display file content):
+
+Example: cat myfile.txt
+grep (Search for text in files):
+
+Example: grep "keyword" file.txt
+echo (Print to the terminal):
+
+Example: echo "Hello, Linux!"
+ping (Check network connectivity):
+
+Example: ping google.com
+ifconfig (Display network configuration):
+
+Example: ifconfig
+ssh (Secure Shell):
+
+Example: ssh user@hostname
+chmod (Change file permissions):
+
+Example: chmod +x script.sh
+chown (Change file ownership):
+
+Example: chown user:group myfile.txt
+top (Monitor system processes):
+
+Example: top
+df (Check disk space):
+
+Example: df -h
+history (View command history):
+
+Example: history
+wget (Download files from the internet):
+
+Example: wget https://example.come/file.zip
